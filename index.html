@@ -9,7 +9,7 @@
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+
 
 
     <style>
@@ -104,14 +104,8 @@
 
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#sigupnModal"><span class="glyphicon glyphicon-log-in"></span>
-                            Signup</a></li>
-                </ul>
 
-                </ul>
+
                 <ul class="nav navbar-nav navbar-right">
                     <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span>
                             Login</a></li>
@@ -141,8 +135,7 @@
                             <input type="password" class="form-control input-sm" placeholder="Password" id="password"
                                 name="password"></div>
                         <br><br>
-                        <button type="submit" class="btn btn-info btn-xs" style="background-color:darkslategray; color:antiquewhite;"><a
-                                href="https://mrtmr12.github.io/Celebio/trip">Login</a></button>
+                        <button type="submit" class="btn btn-info btn-xs" style=" color:antiquewhite;"><a href="https://mrtmr12.github.io/Celebio/trip">Login</a></button>
                         <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button><br>
                         <div class="checkbox">
                             <label>
@@ -168,59 +161,54 @@
     </div>
 
 
-
-    <div class="slideshow" style="max-width:80%;">
-
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img/Paris.jpg" style="width:100%">
-            <div class="text">PARIS</div>
+    <div class="card-deck" >
+        <div class="card" style="height:50%; margin-bottom: 15px;">
+            <div>
+                    <img src="https://brewminate.com/wp-content/uploads/2018/02/Infrastructure01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                       
+                    </div>
+            </div><br><br><br><br>
+            <div style="margin-top:15px;">
+                    <img src="https://brewminate.com/wp-content/uploads/2018/02/Infrastructure01.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                       
+                    </div>
+            </div>
+            
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img/copenhagen.jpg" style="width:100%">
-            <div class="text">COPENHAGEN</div>
+        <div class="card" style="height:70%;">
+            <img src="https://cdn.solacore.net/upload/2018-04-15/d8ed19bb-478f-463f-a8e2-3a8e1bf26743.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img/london.jpg" style="width:100%">
-            <div class="text">LONDON</div>
+        <div class="card" style="height:70%;">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
         </div>
-
     </div>
 
 
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 2000); // Change image every 2 seconds
-        }
-    </script>
-<br>
-<br>
+
+
+    <br>
+    <br>
     <div class="row">
         <div class="col-md-4">
             <div class="row"></div>
