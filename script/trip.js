@@ -16,7 +16,7 @@ function formatDate(date) {
 
 $(document).ready(function(){
 
-    a="https://cors-anywhere.herokuapp.com/http://104.248.33.42:5000" + "/api/trips";
+    a="http://104.248.33.42:5000" + "/api/trips";
         
         $.ajax({
             type: 'GET',

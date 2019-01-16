@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SIGN UP</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body style="background-color:lightgrey;">
@@ -32,35 +21,41 @@
 
     <form class="container-fluid" style="width:40%;">
         <div class="form-group">
-            <label for="exampleInputName1"></label><b>Name</b></label>
-            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="usernameHelp" placeholder="Name">
+            <label for="name"></label><b>Name</b></label>
+            <input type="text" class="form-control" id="name" aria-describedby="usernameHelp" placeholder="Name">
             <small id="nameHelp" class="form-text text-muted"></small>
         </div>
         <div class="form-group">
-            <label for="exampleInputLastname1"><b>Lastname</b></label>
-            <input type="Lastname" class="form-control" id="exampleInputLastname1" placeholder="Lastname">
+            <label for="lastname"><b>Lastname</b></label>
+            <input type="text" class="form-control" id="lastname" placeholder="Lastname">
         </div>
         <div class="form-group">
-            <label for="exampleInputUsername1"></label><b>Username</b></label>
-            <input type="username" class="form-control" id="exampleInputusername1" aria-describedby="usernameHelp"
+            <label for="username"></label><b>Username</b></label>
+            <input type="username" class="form-control" id="username" aria-describedby="usernameHelp"
                 placeholder="Username">
             <small id="usernameHelp" class="form-text text-muted"></small>
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="passwd">Password</label>
+            <input type="password" class="form-control" id="passwd" placeholder="Password">
         </div>
 
 
-        <div class="btn-group">
-            <button type="button" class="btn btn-light btn-lg"><a href="trip.html">Sign up</a></button>
-        </div>
+        
     </form>
+    <div class="btn-group" >
+        <button class="btn btn-dark btn-lg" onclick="gg()">Submit</button>        
+    </div>
+    <p id="result"></p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="script/singup.js"></script>
 </body>
 
 </html>

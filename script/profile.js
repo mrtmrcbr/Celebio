@@ -5,7 +5,7 @@
 // });
 $(document).ready(function(){
 
-    a="https://cors-anywhere.herokuapp.com/http://104.248.33.42:5000" + "/api/users/"+"mrtmr";
+    a="http://104.248.33.42:5000" + "/api/users/"+"denizC";
         
         $.ajax({
             type: 'GET',
@@ -25,7 +25,7 @@ $(document).ready(function(){
 
                     $( "#BioData" ).append(
                         `<h1 style="font-size:25px;">BIOGRAPHY</h1>
-                        <p>${data[0].bio}</p>
+                        <p>${data[0].gender} - ${data[0].bio}</p>
                         `
                         );
 
