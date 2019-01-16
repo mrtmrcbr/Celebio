@@ -5,7 +5,7 @@
 // });
 $(document).ready(function(){
 
-    a="http://104.248.33.42:5000" + "/api/users/"+"denizC";
+    a="http://104.248.33.42:5000" + "/api/users/"+"edac";
         
         $.ajax({
             type: 'GET',
@@ -14,7 +14,6 @@ $(document).ready(function(){
             //dataType:JSON
         }).done(function(data) {
            
-                console.log(data)
                 $( "#ProfileData" ).append(
                     `<h1>${data[0].name} ${data[0].surname}</h1>
                         <p>${data[0].age} , ${data[0].nationality}</p>

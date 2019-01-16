@@ -26,6 +26,7 @@ $(document).ready(function(){
         }).done(function(data) {
             for(const trip of data) {
                 console.log(trip)
+                
                 $( "#CardHolder" ).append(
                     `<div class="card" style="width:450px">
                         <div class="card profile-card-5">
@@ -37,11 +38,19 @@ $(document).ready(function(){
                                 <h5 class="card-title" style="color:antiquewhite;">From: ${trip.from} - To: ${trip.to}</h5>
                                 <p class="card-text" style="color:antiquewhite;">Date: ${formatDate(new Date(trip.time))} with ${ trip.vehicle}</p>
                 
-                                <p align="right"> <a href="profile.html" class="btn btn-dark ">View</a></p>
+                                <p align="right"> <a id="${trip.creatorID}" onClick="hh()" href="profile2.html"  class="btn btn-dark ">${trip.creatorID}</a></p>
                             </div>
                         </div>
                     </div>`
                     );
+                   
             }
         });
 });
+
+function hh(){
+    
+    var value = $( this ).id();
+    alert(value)
+    console.log(value)
+}
