@@ -3,7 +3,10 @@
 //     // $(".tab").addClass("active"); // instead of this do the below 
 //     $(this).removeClass("btn-default").addClass("btn-primary");   
 // });
-var g = document.cookie
+function delete_cookie( name ) {
+    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  }
+  delete_cookie(".");
 $(document).ready(function(){
 console.log(g)
     a="http://104.248.33.42:5000" + "/api/users/"+g;

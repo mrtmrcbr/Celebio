@@ -38,7 +38,7 @@ $(document).ready(function(){
                                 <h5 class="card-title" style="color:antiquewhite;">From: ${trip.from} - To: ${trip.to}</h5>
                                 <p class="card-text" style="color:antiquewhite;">Date: ${formatDate(new Date(trip.time))} with ${ trip.vehicle}</p>
                 
-                                <p align="right"> <a id="${trip.creatorID}" onClick="hh()" href="profile2.html"  class="btn btn-dark ">${trip.creatorID}</a></p>
+                                <p align="right"> <a  onClick="hh()" href="profile2.html"  class="btn btn-dark ">${trip.creatorID}</a></p>
                             </div>
                         </div>
                     </div>`
@@ -48,9 +48,3 @@ $(document).ready(function(){
         });
 });
 
-function hh(){
-    
-    var value = $( this ).id();
-    alert(value)
-    console.log(value)
-}
